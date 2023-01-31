@@ -5,7 +5,7 @@ import com.example.rickandmorty.feature_characters.data.remote.dto.CharactersDto
 
 interface CharacterRepository {
 
-    suspend fun getCharacters(): CharactersDto
+    suspend fun getCharacters(page: Int): CharactersDto
 
     suspend fun getCharacterById(coinId: Int): CharacterDetailsDto
 }
